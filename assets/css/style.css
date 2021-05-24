@@ -1,0 +1,57 @@
+*,*::before, *::after{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+}
+.container {
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 5px 15px 2px;
+}
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 20px 0;
+    gap: 12px;     
+}
+.btn {
+    padding: 5px;
+    color: white;
+    background-color: rgb(175, 19, 175);
+    border: 2px black solid;
+}
+.btn:hover {
+    cursor: pointer;
+}
+#startBtn, #nextBtn {
+    font-size: 1.5rem;
+    padding: 10px 20px; 
+    font-weight: bold;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.hide {
+    display: none;
+}
+.timer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+}
+.highscore {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
